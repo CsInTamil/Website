@@ -1,43 +1,64 @@
-import { Button } from "@chakra-ui/button";
-import { Image } from "@chakra-ui/image";
-import { Badge, Box, Flex, Heading, Text, VStack } from "@chakra-ui/layout";
+import Image from "next/image";
+import {
+  Box,
+  Center,
+  Heading,
+  Text,
+  Stack,
+  Avatar,
+  useColorModeValue,
+  Button,
+  Badge,
+} from "@chakra-ui/react";
 
-export const CourseCard = ({ course }) => {
+export default function CourseCard({ course }) {
   return (
-    <Flex
-      w={["sm", "sm", "md", "md"]}
-      direction="column"
-      alignItems="center"
-      p={2}
-      borderWidth="1px"
-      borderRadius="md"
-      shadow="md"
-      _hover={{ bg: "#ebedf0", transform: "translateY(-2px)" }}
-    >
-      <Image src={course.image} />
-      <Heading fontSize="md" mt={3}>
-        {course.title}
-      </Heading>
-      <Text mt={5}>{course.description}</Text>
-      <Button
-        w="100%"
-        mt={5}
-        mb={5}
-        bg="green.400"
-        color="white"
-        _hover={{ bg: "green.500", transform: "translateY(-2px)" }}
+    <Center py={6}>
+      <Box
+        maxW="445px"
+        w={"full"}
+        bg={useColorModeValue("white", "gray.900")}
+        boxShadow={"2xl"}
+        rounded={"md"}
+        p={6}
+        overflow={"hidden"}
       >
-        Start
-      </Button>
-      {course.price ? (
-        <Badge alignSelf="flex-end" fontSize="md" colorScheme="yellow">
-          {course.price}
-        </Badge>
-      ) : (
-        <Badge alignSelf="flex-end" fontSize="md" colorScheme="green">
-          Free
-        </Badge>
-      )}
-    </Flex>
+        <Box h="210px" bg={"gray.100"} mt={-6} mx={-6} mb={6} pos={"relative"}>
+          <Image src={course.image} layout={"fill"} />
+        </Box>
+        <Stack>
+          {course.price === "0" ? (
+            <Badge
+              fontSize="0.8em"
+              alignSelf="flex-start"
+              variant="subtle"
+              colorScheme="green"
+            >
+              Free
+            </Badge>
+          ) : (
+            <Badge
+              fontSize="0.8em"
+              alignSelf="flex-start"
+              variant="subtle"
+              colorScheme="yellow"
+            >
+              {course.price}
+            </Badge>
+          )}
+          <Heading
+            color={useColorModeValue("gray.700", "white")}
+            fontSize={"2xl"}
+            fontFamily={"body"}
+          >
+            {course.title}
+          </Heading>
+          <Text color={"gray.500"}>{course.description}</Text>
+        </Stack>
+        <Button w={"full"} colorScheme="purple" mt={5}>
+          Start
+        </Button>
+      </Box>
+    </Center>
   );
-};
+}

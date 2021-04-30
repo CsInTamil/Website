@@ -84,7 +84,7 @@ export default function WithSubnavigation() {
             }}
             leftIcon={<FaGoogle />}
           >
-            Sign In With Google
+            Sign In
           </Button>
         </Stack>
       </Flex>

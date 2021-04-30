@@ -2,7 +2,6 @@ import {
   Avatar,
   Box,
   chakra,
-  Container,
   Flex,
   Icon,
   SimpleGrid,
@@ -31,6 +30,13 @@ const testimonials = [
       "https://yt3.ggpht.com/ytc/AAUvwnhzqG1F6sLBz0Hu3aVfqS_Cv7j4S3RlEOMDMzLdKA=s176-c-k-c0x00ffffff-no-rj",
   },
   {
+    name: "Nivasan V",
+    content:
+      "Super bro your video very clear about their concepts , we are supporting you, plz make video continuously with out fail bro. I am full watched your c++, data structures, it is very excellent i am suggesting this channels to my college frnds. bro i am always supporting you because have good teching skill as well as technical also, dont stop the video uploding😘",
+    avatar:
+      "https://yt3.ggpht.com/ytc/AAUvwnjnddckdiHBZzdMBKWpQ_2mhktGbvSKjZQBWQ=s176-c-k-c0x00ffffff-no-rj",
+  },
+  {
     name: "029-Manikandan CSE  ",
     content: "Tamil la evalo quality yaana video va😳 Congratulations. Bro🔥",
     avatar:
@@ -41,13 +47,6 @@ const testimonials = [
     content: "sir neenga solli tara vidham nalla irruku. thanks sir.",
     avatar:
       "https://yt3.ggpht.com/ytc/AAUvwnjpEEagKrcQVVLftfKNnvikylsCuPXxeLhm3yc9=s176-c-k-c0x00ffffff-no-rj",
-  },
-  {
-    name: "Nivasan V",
-    content:
-      "Super bro your video very clear about their concepts , we are supporting you, plz make video continuously with out fail bro. I am full watched your c++, data structures, it is very excellent i am suggesting this channels to my college frnds. bro i am always supporting you because have good teching skill as well as technical also, dont stop the video uploding😘",
-    avatar:
-      "https://yt3.ggpht.com/ytc/AAUvwnjnddckdiHBZzdMBKWpQ_2mhktGbvSKjZQBWQ=s176-c-k-c0x00ffffff-no-rj",
   },
 ];
 
