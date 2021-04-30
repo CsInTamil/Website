@@ -146,18 +146,6 @@ export default function GridBlurredBackdrop() {
         >
           Comments from Youtube Subscribers
         </chakra.h1>
-        <chakra.h2
-          margin={"auto"}
-          width={"70%"}
-          fontWeight={"medium"}
-          color={useColorModeValue("gray.500", "gray.400")}
-        >
-          See why over{" "}
-          <chakra.strong color={useColorModeValue("gray.700", "gray.50")}>
-            150,000+
-          </chakra.strong>{" "}
-          influencers use EEZY to manage their social media content!
-        </chakra.h2>
       </Box>
       <SimpleGrid
         columns={{ base: 1, xl: 2 }}
