@@ -11,36 +11,43 @@ import {
 
 const testimonials = [
   {
-    name: "Brandon P.",
-    role: "Chief Marketing Officer",
+    name: "Kulla Narikootam Gaming",
     content:
-      "It really saves me time and effort. It is exactly what our business has been lacking. EEZY is the most valuable business resource we have EVER purchased. After using EEZY my business skyrocketed!",
+      "Super bro..unga video la neraya idea kedaichuthu. Mukkiyama error handle panna unga kittatha learn pannikitan",
     avatar:
-      "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "https://yt3.ggpht.com/ytc/AAUvwnjpyG3h6-A1bEZENPeh7UfHRX-nSJSUOTZDliPh=s176-c-k-c0x00ffffff-no-rj",
   },
   {
-    name: "Krysta B.",
-    role: "Entrepreneur",
-    content:
-      "I didn't even need training. We've used EEZY for the last five years. I have gotten at least 50 times the value from EEZY. I made back the purchase price in just 48 hours!",
+    name: "chinna360 flim",
+    content: "Good quality video and content..... Keep it up bro",
     avatar:
-      "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "https://yt3.ggpht.com/ytc/AAUvwnjH4BGfSjUM4eFLPrXZbANUGAAUm2MVBTmpns5zdg=s176-c-k-c0x00ffffff-no-rj",
   },
   {
-    name: "Darcy L.",
-    role: "Movie star",
+    name: "ROCKY MUTHU ",
     content:
-      "Thank you for making it painless, pleasant and most of all, hassle free! I'm good to go. No matter where you go, EEZY is the coolest, most happening thing around! I love EEZY!",
+      "அண்ணா ரொம்ப நன்றி. நான் சுயமாக கணினி பயிற்சி மையம் வைத்து...பயிற்சி அளித்து வருகிறேன்...தொழிற்முறையில் (Professional) பயிற்சி அளிக்க மிக மிக முயற்சிக்கிறேன்.... எனக்கு உங்கள் YouTube channel மிக மிக ஆக்கபூர்வமாக உள்ளது... இந்த சேவை தொடர வேண்டும்....பாராட்டு அண்ணா.... மனமார்ந்த நன்றி அண்ணா....",
     avatar:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80",
+      "https://yt3.ggpht.com/ytc/AAUvwnhzqG1F6sLBz0Hu3aVfqS_Cv7j4S3RlEOMDMzLdKA=s176-c-k-c0x00ffffff-no-rj",
   },
   {
-    name: "Daniel T.",
-    role: "Musician",
-    content:
-      "I am so pleased with this product. EEZY is both attractive and highly adaptable. Without EEZY, we would have gone bankrupt by now. Thank you for creating this product!",
+    name: "029-Manikandan CSE  ",
+    content: "Tamil la evalo quality yaana video va😳 Congratulations. Bro🔥",
     avatar:
-      "https://images.unsplash.com/photo-1606513542745-97629752a13b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "https://yt3.ggpht.com/ytc/AAUvwnjxXBxIdFXla7psLuOK0kGYF4MHj6ESir6L3w-uXQ=s176-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    name: "jAya sUrya",
+    content: "sir neenga solli tara vidham nalla irruku. thanks sir.",
+    avatar:
+      "https://yt3.ggpht.com/ytc/AAUvwnjpEEagKrcQVVLftfKNnvikylsCuPXxeLhm3yc9=s176-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    name: "Nivasan V",
+    content:
+      "Super bro your video very clear about their concepts , we are supporting you, plz make video continuously with out fail bro. I am full watched your c++, data structures, it is very excellent i am suggesting this channels to my college frnds. bro i am always supporting you because have good teching skill as well as technical also, dont stop the video uploding😘",
+    avatar:
+      "https://yt3.ggpht.com/ytc/AAUvwnjnddckdiHBZzdMBKWpQ_2mhktGbvSKjZQBWQ=s176-c-k-c0x00ffffff-no-rj",
   },
 ];
 
@@ -100,10 +107,6 @@ function TestmonialCard(props) {
         </chakra.p>
         <chakra.p fontWeight={"bold"} fontSize={14}>
           {name}
-          <chakra.span fontWeight={"medium"} color={"gray.500"}>
-            {" "}
-            - {role}
-          </chakra.span>
         </chakra.p>
       </Flex>
       <Avatar
@@ -141,7 +144,7 @@ export default function GridBlurredBackdrop() {
           fontWeight={"bold"}
           color={useColorModeValue("gray.700", "gray.50")}
         >
-          You're in good company
+          Comments from Youtube Subscribers
         </chakra.h1>
         <chakra.h2
           margin={"auto"}
