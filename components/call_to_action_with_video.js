@@ -2,18 +2,12 @@ import {
   Container,
   Stack,
   Flex,
-  Box,
   Heading,
   Text,
   Button,
-  Image,
   Icon,
-  IconButton,
   createIcon,
-  IconProps,
   useColorModeValue,
-  UnorderedList,
-  ListItem,
   AspectRatio,
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";

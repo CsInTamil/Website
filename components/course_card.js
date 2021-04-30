@@ -1,11 +1,10 @@
-import Image from "next/image";
 import {
   Box,
   Center,
   Heading,
   Text,
   Stack,
-  Avatar,
+  Image,
   useColorModeValue,
   Button,
   Badge,
