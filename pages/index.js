@@ -1,7 +1,5 @@
-import { Flex, SimpleGrid } from "@chakra-ui/layout";
 import { useEffect } from "react";
 import CallToActionWithVideo from "../components/call_to_action_with_video";
-import CourseCard from "../components/course_card";
 import CourseSection from "../components/course_section";
 import WithSubnavigation from "../components/navbar";
 import ThreeTierPricing from "../components/pricing";

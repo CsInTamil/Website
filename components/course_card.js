@@ -22,8 +22,15 @@ export default function CourseCard({ course }) {
         p={6}
         overflow={"hidden"}
       >
-        <Box h="210px" bg={"gray.100"} mt={-6} mx={-6} mb={6} pos={"relative"}>
-          <Image src={course.image} layout={"fill"} />
+        <Box
+          h="210px"
+          bg={"gray.100"}
+          mt={-6}
+          mx={-6}
+          mb={{ base: 10, md: 12 }}
+          pos={"relative"}
+        >
+          <Image src={course.image} fit="fill" />
         </Box>
         <Stack>
           {course.price === "0" ? (
