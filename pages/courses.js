@@ -1,7 +1,13 @@
 import CourseSection from "../components/course_section";
+import WithSubnavigation from "../components/navbar";
 
 export default function CoursesPage({ courses }) {
-  return <CourseSection courses={courses} />;
+  return (
+    <>
+      <WithSubnavigation />
+      <CourseSection courses={courses} />
+    </>
+  );
 }
 
 export function getStaticProps() {

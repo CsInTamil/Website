@@ -39,6 +39,8 @@ export default function CourseCard({ course }) {
               alignSelf="flex-start"
               variant="subtle"
               colorScheme="green"
+              borderRadius="5px"
+              p={1}
             >
               Free
             </Badge>
@@ -48,6 +50,8 @@ export default function CourseCard({ course }) {
               alignSelf="flex-start"
               variant="subtle"
               colorScheme="yellow"
+              borderRadius="5px"
+              p={1}
             >
               {course.price}
             </Badge>
