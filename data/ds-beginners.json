@@ -3,5 +3,16 @@
     "image": "/ds-beginners.jpg",
     "description": "Learn all the basic concepts of Data Structures",
     "price": "0",
-    "slug": "/courses/ds-beginners"
+    "slug": "/courses/ds-beginners",
+    "videos": [{
+        "provider": "youtube",
+        "video_id": "y99rpT3KmKU",
+        "title": "Introduction",
+        "duration": "3:18"
+    }, {
+        "provider": "youtube",
+        "video_id": "_7uKKk-CrEw",
+        "title": "What are Data Structures?",
+        "duration": "4:21"
+    }]
 }

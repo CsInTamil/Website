@@ -8,11 +8,11 @@
         "provider": "youtube",
         "video_id": "e3Pa74vuJAw",
         "title": "Introduction",
-        "duration": "4 min 51 secs"
+        "duration": "4:51"
     }, {
         "provider": "youtube",
         "video_id": "euAFUdGE3Hk",
         "title": "Printing Text, A Simple C++ Program",
-        "duration": "12 min 48 secs"
+        "duration": "12:48"
     }]
 }

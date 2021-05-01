@@ -1,10 +1,41 @@
+import {
+  AspectRatio,
+  Flex,
+  Text,
+  Stack,
+  Container,
+  VStack,
+  Heading,
+} from "@chakra-ui/layout";
 import WithSubnavigation from "../../../components/navbar";
 
 export default function SingleCoursePage({ course }) {
   return (
     <>
       <WithSubnavigation />
-      {course.title}
+      <Flex align="center" direction="column" mt={10} p={1}>
+        <AspectRatio
+          position={"relative"}
+          width={{ base: "full", md: "70%" }}
+          ratio={16 / 9}
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            src={"https://www.youtube.com/embed/" + course.videos[0].video_id}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </AspectRatio>
+        <Heading
+          mt={{ base: 5, sm: 8, lg: 10 }}
+          fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+        >
+          {course.videos[0].title}
+        </Heading>
+      </Flex>
     </>
   );
 }
