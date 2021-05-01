@@ -2,5 +2,17 @@
     "title": "C++ for Beginners in Tamil",
     "image": "/cpp-beginners.jpg",
     "description": "Learn all the basic concepts of C++",
-    "price": "₹75"
+    "price": "₹75",
+    "slug": "/courses/cpp-beginners",
+    "videos": [{
+        "provider": "youtube",
+        "video_id": "e3Pa74vuJAw",
+        "title": "Introduction",
+        "duration": "4 min 51 secs"
+    }, {
+        "provider": "youtube",
+        "video_id": "euAFUdGE3Hk",
+        "title": "Printing Text, A Simple C++ Program",
+        "duration": "12 min 48 secs"
+    }]
 }

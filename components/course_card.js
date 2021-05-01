@@ -9,6 +9,7 @@ import {
   Button,
   Badge,
 } from "@chakra-ui/react";
+import NextLink from "next/link";
 
 export default function CourseCard({ course }) {
   return (
@@ -21,6 +22,10 @@ export default function CourseCard({ course }) {
         rounded={"md"}
         p={6}
         overflow={"hidden"}
+        transition="all 0.3s ease-in-out"
+        _hover={{
+          transform: "translateY(-5px)",
+        }}
       >
         <Box
           h="210px"
@@ -65,9 +70,11 @@ export default function CourseCard({ course }) {
           </Heading>
           <Text color={"gray.500"}>{course.description}</Text>
         </Stack>
-        <Button w={"full"} colorScheme="purple" mt={5}>
-          Start
-        </Button>
+        <NextLink href={course.slug}>
+          <Button w={"full"} colorScheme="purple" mt={5}>
+            Start
+          </Button>
+        </NextLink>
       </Box>
     </Center>
   );

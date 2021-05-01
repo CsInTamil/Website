@@ -1,5 +1,5 @@
-import CourseSection from "../components/course_section";
-import WithSubnavigation from "../components/navbar";
+import CourseSection from "../../components/course_section";
+import WithSubnavigation from "../../components/navbar";
 
 export default function CoursesPage({ courses }) {
   return (
@@ -20,7 +20,7 @@ export function getStaticProps() {
   let courses = [];
 
   files.forEach((file) => {
-    const course = require("../data/" + file);
+    const course = require("../../data/" + file);
     courses.push(course);
   });
 
