@@ -251,20 +251,24 @@ const NAV_ITEMS = [
     label: "Courses",
     href: "/courses",
   },
+  // {
+  //   label: "Pricing",
+  //   children: [
+  //     {
+  //       label: "Job Board",
+  //       subLabel: "Find your dream design job",
+  //       href: "#",
+  //     },
+  //     {
+  //       label: "Freelance Projects",
+  //       subLabel: "An exclusive list for contract work",
+  //       href: "#",
+  //     },
+  //   ],
+  // },
   {
     label: "Pricing",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
+    href: "/pricing",
   },
   {
     label: "About",

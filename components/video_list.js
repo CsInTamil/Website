@@ -8,7 +8,7 @@ function SingleVideo({ slug, video, index }) {
       as="a"
       href={slug + "/" + video.id}
       boxShadow={"lg"}
-      maxW={"640px"}
+      maxW={{ md: "60%", lg: "70%" }}
       width={"full"}
       p={10}
       justifyContent={"space-between"}
@@ -19,7 +19,9 @@ function SingleVideo({ slug, video, index }) {
       }}
     >
       <Text>{index + 1}</Text>
-      <Text>{video.title}</Text>
+      <Text fontWeight="medium" fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+        {video.title}
+      </Text>
       <Badge variant="subtle" colorScheme="green" borderRadius="5px" p={1}>
         {video.duration}
       </Badge>

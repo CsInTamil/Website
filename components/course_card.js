@@ -70,7 +70,7 @@ export default function CourseCard({ course }) {
           </Heading>
           <Text color={"gray.500"}>{course.description}</Text>
         </Stack>
-        <NextLink href={course.slug}>
+        <NextLink href={course.slug + "/1"}>
           <Button w={"full"} colorScheme="purple" mt={5}>
             Start
           </Button>
