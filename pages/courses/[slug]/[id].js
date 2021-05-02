@@ -1,9 +1,13 @@
 import { AspectRatio, Flex, Heading, Text } from "@chakra-ui/layout";
+import { useAuthState } from "react-firebase-hooks/auth";
 import WithSubnavigation from "../../../components/navbar";
 import VideoList from "../../../components/video_list";
 import { courses_list } from "../../../lib/courses_list";
+import { auth } from "../../../lib/firebase";
 
 export default function CourseIdPage({ course, id }) {
+  const [user] = useAuthState(auth);
+
   return (
     <>
       <WithSubnavigation />
@@ -13,17 +17,26 @@ export default function CourseIdPage({ course, id }) {
           width={{ base: "full", md: "70%" }}
           ratio={16 / 9}
         >
-          <iframe
-            width="100%"
-            height="100%"
-            src={
-              "https://www.youtube.com/embed/" + course.videos[id - 1].video_id
-            }
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <>
+            {!user && <Text>You need to be logged in!</Text>}
+            {user && course.videos[id - 1].membership && (
+              <Text>Become a member to watch this!</Text>
+            )}
+            {user && !course.videos[id - 1].membership && (
+              <iframe
+                width="100%"
+                height="100%"
+                src={
+                  "https://www.youtube.com/embed/" +
+                  course.videos[id - 1].video_id
+                }
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            )}
+          </>
         </AspectRatio>
         <Heading
           mt={{ base: 5, sm: 8, lg: 10 }}

@@ -33,7 +33,8 @@
         "provider": "youtube",
         "video_id": "gAgBAoorwP0",
         "title": "A Simple Calculator",
-        "duration": "11:00"
+        "duration": "11:00",
+        "membership": "true"
     }, {
         "id": "6",
         "provider": "youtube",
