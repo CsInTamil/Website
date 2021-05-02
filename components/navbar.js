@@ -14,6 +14,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Image,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -22,9 +23,20 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 import { FaGoogle } from "react-icons/fa";
+import { auth, googleAuthProvider } from "../lib/firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
+  const [user] = useAuthState(auth);
+
+  function onSignInClick() {
+    auth.signInWithPopup(googleAuthProvider);
+  }
+
+  function signOut() {
+    auth.signOut();
+  }
 
   return (
     <Box>
@@ -67,27 +79,37 @@ export default function WithSubnavigation() {
             <DesktopNav />
           </Flex>
         </Flex>
-
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <Button
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"purple.500"}
-            href={"#"}
-            _hover={{
-              bg: "purple.600",
-            }}
-            leftIcon={<FaGoogle />}
-          >
-            Sign In
-          </Button>
-        </Stack>
+        <Flex flex={1} justify={"flex-end"}>
+          {user && (
+            <Image
+              justify={"flex-end"}
+              onClick={signOut}
+              boxSize="35px"
+              borderRadius="full"
+              src={user.photoURL}
+              alt={user.email}
+              _hover={{
+                cursor: "pointer",
+              }}
+            />
+          )}
+          {!user && (
+            <Button
+              onClick={onSignInClick}
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              bg={"purple.500"}
+              href={"#"}
+              _hover={{
+                bg: "purple.600",
+              }}
+              leftIcon={<FaGoogle />}
+            >
+              Sign In
+            </Button>
+          )}
+        </Flex>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
