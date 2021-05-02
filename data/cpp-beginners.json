@@ -16,5 +16,35 @@
         "video_id": "euAFUdGE3Hk",
         "title": "Printing Text, A Simple C++ Program",
         "duration": "12:48"
+    }, {
+        "id": "3",
+        "provider": "youtube",
+        "video_id": "BaNLr8Z6L_M",
+        "title": "Newline Operator",
+        "duration": "8:27"
+    }, {
+        "id": "4",
+        "provider": "youtube",
+        "video_id": "ZAPwgT8O5Zg",
+        "title": "Variables",
+        "duration": "10:02"
+    }, {
+        "id": "5",
+        "provider": "youtube",
+        "video_id": "gAgBAoorwP0",
+        "title": "A Simple Calculator",
+        "duration": "11:00"
+    }, {
+        "id": "6",
+        "provider": "youtube",
+        "video_id": "0RhjlDJUh8Y",
+        "title": "Arithmetic Operations",
+        "duration": "8:10"
+    }, {
+        "id": "7",
+        "provider": "youtube",
+        "video_id": "eoQvdFSUe80",
+        "title": "If Else Statements",
+        "duration": "8:51"
     }]
 }

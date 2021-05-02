@@ -31,6 +31,12 @@ export default function CourseIdPage({ course, id }) {
         >
           {course.videos[id - 1].title}
         </Heading>
+        <Heading
+          mt={{ base: 5, sm: 8, lg: 10 }}
+          fontSize={{ base: "1xl", sm: "2xl", lg: "4xl" }}
+        >
+          Chapters
+        </Heading>
         <VideoList slug={course.slug} videos={course.videos} />
       </Flex>
     </>
