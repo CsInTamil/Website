@@ -5,11 +5,13 @@
     "price": "0",
     "slug": "/courses/python-beginners",
     "videos": [{
+        "id": "1",
         "provider": "youtube",
         "video_id": "sCa2zHHASeg",
         "title": "Introduction",
         "duration": "3:09"
     }, {
+        "id": "2",
         "provider": "youtube",
         "video_id": "RamC9lsCd10",
         "title": " Simple Print Statement",

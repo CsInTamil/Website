@@ -5,11 +5,13 @@
     "price": "0",
     "slug": "/courses/java-beginners",
     "videos": [{
+        "id": "1",
         "provider": "youtube",
         "video_id": "EHQkHcXjzUA",
         "title": "Introduction",
         "duration": "6:57"
     }, {
+        "id": "2",
         "provider": "youtube",
         "video_id": "SoYBv3KPUF8",
         "title": "Basic Structure of a Java Program",

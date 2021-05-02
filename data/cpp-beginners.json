@@ -5,11 +5,13 @@
     "price": "₹75",
     "slug": "/courses/cpp-beginners",
     "videos": [{
+        "id": "1",
         "provider": "youtube",
         "video_id": "e3Pa74vuJAw",
         "title": "Introduction",
         "duration": "4:51"
     }, {
+        "id": "2",
         "provider": "youtube",
         "video_id": "euAFUdGE3Hk",
         "title": "Printing Text, A Simple C++ Program",
